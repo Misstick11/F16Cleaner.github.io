@@ -89,3 +89,21 @@ footer {
     background: #35424a;
     color: white;
 }
+
+.gallery-main {
+    padding: 20px;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-images img {
+    max-width: 300px;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
