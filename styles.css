@@ -1,87 +1,91 @@
-/* Style général */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    background-color: #f9f9f9;
     color: #333;
 }
 
-/* En-tête */
 header {
-    background-color: #0056b3;
+    background: #35424a;
     color: white;
+    padding: 20px 0;
     text-align: center;
-    padding: 20px;
 }
 
 .logo-image {
-    width: 100px;
+    max-width: 150px;
     height: auto;
 }
 
-header h1 {
-    font-size: 36px;
-    margin: 10px 0;
+h1 {
+    margin: 0;
 }
 
-header p {
-    font-size: 18px;
+h2 {
+    color: #35424a;
+    margin-bottom: 10px;
 }
 
-/* Section À propos */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 main {
     padding: 20px;
 }
 
-.about {
-    background-color: #e6f7ff;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+.about, .services, .pricing, .contact {
+    background: white;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.about h2 {
-    font-size: 28px;
-    color: #0056b3;
-}
-
-.about p {
-    font-size: 16px;
-}
-
-/* Section Services */
 .services ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 .services ul li {
-    background-color: #fff;
     margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
-/* Section Contact */
-.contact a {
-    color: #0056b3;
-    text-decoration: none;
-}
-
-.contact a:hover {
-    text-decoration: underline;
-}
-
-/* Pied de page */
-footer {
-    background-color: #0056b3;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
+.pricing table {
     width: 100%;
-    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.pricing th, .pricing td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.pricing th {
+    background: #35424a;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: white;
 }
